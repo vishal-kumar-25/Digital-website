@@ -1,0 +1,230 @@
+body{
+    font-family: sans-serif;
+    }
+
+/*main navbar*/
+    .nav-color {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        padding: 15px;
+        display: inline-block;
+    }
+    .nav-color:hover {
+        color:rgb(16, 236, 244);
+        border-bottom: 3px solid rgb(16, 236, 244);
+    }
+    .navbar-nav .dropdown-menu {
+        position: absolute;
+        display: none;
+    }
+    .navbar-nav .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .dropdown-menu a {
+        color: black;
+        padding: 10px 15px;
+        text-decoration: none;
+    }
+    .dropdown-menu a:hover {
+        color: rgb(16, 236, 244);
+        background-color: transparent;
+    }
+    #navbar{
+      position:sticky;
+      top: 0px;
+      z-index: 1;
+    }
+
+
+/* service-style */
+.service-icon {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #6c63ff;
+}
+.service-heading {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+.service-description {
+    font-size: 0.9rem;
+    color: #555;
+}
+/* header-style */
+.header-title {
+    font-weight: bold;
+    font-size: 2rem;
+}
+/*about-style */
+.about-heading {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.about-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+.about-icon {
+    font-size: 1.5rem;
+    color: #6c63ff;
+}
+
+.about-img {
+    position: relative;
+}
+
+.about-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.img-overlay {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+
+.img-stack {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 120px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+}
+/*contact-style */
+.contact{
+    background-image: url('../image/Contact-US-1-1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* footer-style */
+/* Loader Effect on icons */
+    .social-icons i {
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #17a2b8;
+      transform: scale(1.2);
+    }
+    .contact-info i {
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .contact-info i:hover {
+      color: #17a2b8;
+      transform: scale(1.2);
+    }
+    .contact-info span {
+      transition: color 0.3s, transform 0.3s;
+    }
+    .contact-info span:hover {
+      color: #17a2b8;
+      transform: scale(1.2);
+    }
+    /* Responsive Image Section */
+    .image-section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px; /* Reduced gap between images */
+    }
+
+    .image-section .col-md-2 {
+      flex: 1 1 auto;
+      max-width: 150px; /* Max width for image columns */
+    }
+
+    @media (max-width: 576px) {
+      .image-section {
+        flex-direction: column;
+        align-items: center;
+      }
+      .social-icons {
+        justify-content: center;
+      }
+    }
+
+    .bg-color{
+        background-color: rgb(43, 43, 83);
+        color: white;
+    }
+    .mx-1{
+       color: white;
+    }
+    /*arrow style*/
+    .arrow {
+        position: fixed;
+        top: 500px;
+        right: 10px;
+        font-size: 24px;
+        transition: top 0.5s ease; 
+    }
+    #a{
+        color: red;
+   text-decoration: none;
+    }
+    /* technology-style */
+    .technology-section {
+      background: url('../image/bg-tech.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 0;
+      text-align: center;
+    }
+    .technology-section h2 {
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .technology {
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .technology:hover {
+      background-color: rgb(9, 247, 235);
+    }
+    .technology i {
+      font-size: 50px;
+      margin-bottom: 20px;
+    }
+    .technology-title {
+      font-weight: bold;
+      margin-top: 15px;
+      font-size: 18px;
+    }
+  /*choose*/
+  .hover-effect {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+/*mission*/
+.mission{
+    font-size: 2.5rem; /* Adjust font size as needed */
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.2rem; /* Slightly larger font for emphasis */
+    color: #333; /* Darker text color for better readability */
+}
+
+    
+    
+    
+    
+   
+    
+    
