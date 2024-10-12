@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Predulive - Digital Agency</title>
+    <title>UpDigiStore - Digital Agency</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
@@ -40,8 +40,8 @@
   <div class="container">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid">
-                <img src="image/pixelcut-export.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;">
-               
+                <!-- <img src="image/pixelcut-export.png" alt="Logo" style="width: 40px; height: 40px; margin-right: 10px;"> -->
+                <h2>UpDigiStore</h2>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -98,15 +98,115 @@
         </nav>
   </div>
 </section>
+
+<!-- Hero Section with Image Slider -->
+<section class="hero-section">
+  <div class="hero-slider">
+    <div class="hero-slide active">
+      <img src="image/HeroImage1.avif" alt="Hero Image 1" class="img-fluid">
+      <div class="hero-text">
+        <h1>Welcome to UpDigiStore</h1>
+        <p>Empowering Your Digital Journey</p>
+        <a href="#services" class="btn btn-primary">Explore Our Services</a>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img src="image/HeroImage4.avif" alt="Hero Image 2" class="img-fluid">
+      <div class="hero-text">
+        <h1>Transform Your Ideas</h1>
+        <p>With Cutting-Edge Solutions</p>
+        <a href="#about" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img src="image/HeroImage5.avif" alt="Hero Image 3" class="img-fluid">
+      <div class="hero-text">
+        <h1>Innovate and Succeed</h1>
+        <p>Your Growth is Our Mission</p>
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CSS for Image Slider -->
+<style>
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-slider {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+
+  .hero-slide.active {
+    opacity: 1;
+  }
+
+  .hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  .hero-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+</style>
+
+<!-- JavaScript for Automatic Slider -->
+<script>
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-slide');
+  const totalSlides = slides.length;
+
+  function showNextSlide() {
+    slides[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % totalSlides;
+    slides[currentSlide].classList.add('active');
+  }
+
+  setInterval(showNextSlide, 5000); // Change image every 3 seconds
+</script>
+
+
+
     <!--about-section -->
     <section class="py-5">
         <div class="container">
             <div class="row align-items-center">
-                <span>ABOUT PREDULIVE</span>
+                <span>ABOUT UpDigiStore</span>
                 <div class="col-md-6">
                     <h2 class="about-heading">Catalyzing the Digital Revolution</h2>
                     <p class="about-description">
-                      Predulive, founded by Shivanshu Dwivedi, aims to drive innovation in the technology sector. Since its inception, our focus has been on providing cutting-edge solutions across various industries, enabling businesses to achieve seamless digital transformation. Predulive is dedicated to delivering high-quality IT services and products that empower clients to stay ahead in a rapidly evolving digital landscape.
+                      UpDigiStore (Subsidiary of Predulive Edutech Foundation), founded by Shivanshu Dwivedi, aims to drive innovation in the technology sector. Since its inception, our focus has been on providing cutting-edge solutions across various industries, enabling businesses to achieve seamless digital transformation. Predulive is dedicated to delivering high-quality IT services and products that empower clients to stay ahead in a rapidly evolving digital landscape.
                     </p>
                     <div class="row mt-4">
                         <div class="col-md-6">
@@ -148,7 +248,7 @@
   <div class="container text-center">
       <h2 class="header-title mission">Our Mission</h2>
       <p class="lead mt-4">
-          Our mission is to provide exceptional digital services that help our clients achieve their business goals. We strive to stay at the forefront of technology and industry trends, ensuring that our clients receive the best solutions tailored to their needs. At Predulive, your success is our priority.
+          Our mission is to provide exceptional digital services that help our clients achieve their business goals. We strive to stay at the forefront of technology and industry trends, ensuring that our clients receive the best solutions tailored to their needs. At UpDigiStore , your success is our priority.
       </p>
   </div>
 </section>

@@ -1,0 +1,44 @@
+span.ced_footer_mail_destination_text_resize {
+font-size : 14px;
+color: #AEAACB;
+}
+a.ced_footer_mailid_text {
+color:#fff
+} .ced-culture-page-line-divider {
+transform:rotate(90deg);
+}
+.mwb_star{
+position: absolute;
+right: -86px;
+} .awsm-job-form {
+display: none;
+} .team-thumb .team-social.flex-middle {
+padding: 252px 0px 0px 0px;
+} .portfolio-related-posts-wrap {
+padding-top: 0px;
+display: none;
+} .awsm-job-entry-content.entry-content {
+padding: 0px 0px;
+}  .awsm_job_openings-template-custom .awsm-job-container {
+padding: 50px 15px;
+} .blog .elementor-social-icon {
+display: inline-flex;
+} .header-mobile .elementor-column {
+width: 50%;
+}
+.elementor-icon.elementor-social-icon {
+display: inline-flex;
+} @media only screen and (max-width: 767px) {
+.elementor-1308 .elementor-element.elementor-element-1a1bfdb > .elementor-widget-container {
+padding: 0;
+}
+.site-footer .elementor-column .contact-info.box-style2 {
+margin-bottom: 30px;
+}
+} a#wt-cli-privacy-save-btn {
+background-color: #43baff;
+} h6.mwb-sub-heading-security-page {
+margin-top: 50px;
+} .elementor-element .content-box h5 a {
+text-decoration: none;
+}
